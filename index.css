@@ -959,4 +959,64 @@ p {
     text-align: center;
   }
 }
+/* ================= HERO RESPONSIVE FIX ================= */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* HEADLINE */
+.hero-content h1 {
+  font-size: clamp(36px, 7vw, 64px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.hero-content p {
+  font-size: clamp(14px, 3.8vw, 18px);
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  color: #cfcfe6;
+}
+
+/* BUTTON GROUP */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.hero-buttons .btn {
+  min-width: 160px;
+}
+@media (max-width: 600px) {
+  .hero-content h1 {
+    line-height: 1.2;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 
