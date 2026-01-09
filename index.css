@@ -1069,6 +1069,60 @@ p {
     max-width: 280px;
   }
 }
+/* ================= HAMBURGER FORCE FIX ================= */
+
+/* Default hidden on desktop */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 9999; /* VERY IMPORTANT */
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+/* SHOW ONLY ON MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex !important; /* FORCE SHOW */
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 9998;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0b0b12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 32px 0;
+
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.35s ease;
+  }
+
+  .navbar nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
 
 
 
