@@ -127,4 +127,3 @@ if (menuToggle && navMenu && menuOverlay) {
     menuOverlay.classList.remove("active");
   });
 }
-
