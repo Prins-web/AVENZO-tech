@@ -1322,3 +1322,141 @@ section {
     font-size: 11px;
   }
 }
+/* ================= MOBILE RESET (ABOUT → FOOTER) ================= */
+@media (max-width: 768px) {
+
+  /* GENERAL */
+  section:not(.hero) {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 768px) {
+
+  .about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 26px;
+  }
+
+  .about-boxes {
+    gap: 16px;
+  }
+
+  .about-box {
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
+@media (max-width: 768px) {
+
+  .services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .services-grid {
+    gap: 18px;
+  }
+
+  .service-card {
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+
+  .projects {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .projects-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .project-card {
+    height: auto;
+    padding: 22px;
+    border-radius: 20px;
+    box-shadow: none;
+  }
+}
+@media (max-width: 768px) {
+
+  .why {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .why-card {
+    padding: 26px 20px;
+    border-radius: 18px;
+  }
+
+  .why-card h3 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+
+  .contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contact-inner {
+    gap: 28px;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 22px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 50px 20px 30px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
