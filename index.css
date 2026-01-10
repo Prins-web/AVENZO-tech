@@ -34,9 +34,10 @@ body {
 }
 
 .logo img {
-  height: 40px;                /* keeps header height stable */
+  height: 30px;                /* keeps header height stable */
   width: auto;
-  transform: scale(4.8);       /* 👈 makes logo BIG */
+  transform: scale(3.0);  
+  padding-top: 5px;    
   transform-origin: left center;
   transition: transform 0.3s ease;
 }
@@ -1122,6 +1123,7 @@ p {
     pointer-events: auto;
   }
 }
+
 
 
 
